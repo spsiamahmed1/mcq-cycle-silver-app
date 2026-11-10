@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="#F8F9FA" android:padding="16dp">
+    
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+        <TextView android:id="@+id/examTimer" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+            android:text="20:00" android:textSize="20sp" android:textStyle="bold" android:textColor="#FF8A00" />
+        <TextView android:id="@+id/examProgress" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="1/100" android:textSize="16sp" android:textColor="#8A8A8A" />
+    </LinearLayout>
+    
+    <ScrollView android:id="@+id/examScroll" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:layout_marginTop="24dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"
+            android:background="#FFFFFF" android:padding="24dp" android:elevation="2dp">
+            
+            <TextView android:id="@+id/qPrompt" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Loading..." android:textSize="18sp" android:textColor="#1A1A1A" android:layout_marginBottom="24dp" />
+                
+            <TextView android:id="@+id/optA" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:background="@drawable/bg_option" android:padding="16dp" android:text="Option A" android:textColor="#1A1A1A" android:layout_marginBottom="12dp" />
+            <TextView android:id="@+id/optB" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:background="@drawable/bg_option" android:padding="16dp" android:text="Option B" android:textColor="#1A1A1A" android:layout_marginBottom="12dp" />
+            <TextView android:id="@+id/optC" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:background="@drawable/bg_option" android:padding="16dp" android:text="Option C" android:textColor="#1A1A1A" android:layout_marginBottom="12dp" />
+            <TextView android:id="@+id/optD" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:background="@drawable/bg_option" android:padding="16dp" android:text="Option D" android:textColor="#1A1A1A" />
+                
+        </LinearLayout>
+    </ScrollView>
+    
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="16dp">
+        <Button android:id="@+id/btnPrev" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+            android:text="Previous" android:background="#FFFFFF" android:textColor="#1A1A1A" />
+        <Button android:id="@+id/btnSkip" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+            android:text="Skip" android:background="#FFFFFF" android:textColor="#1A1A1A" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" />
+        <Button android:id="@+id/btnNext" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+            android:text="Next" android:background="@drawable/btn_orange" android:textColor="#FFFFFF" />
+    </LinearLayout>
+</LinearLayout>
