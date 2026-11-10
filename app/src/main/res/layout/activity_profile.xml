@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#F8F9FA">
     <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp">
-        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Profile & Settings" android:textSize="24sp" android:textStyle="bold" android:textColor="#1A1A1A" android:paddingBottom="24dp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Profile &amp; Settings" android:textSize="24sp" android:textStyle="bold" android:textColor="#1A1A1A" android:paddingBottom="24dp" />
         <com.google.android.material.switchmaterial.SwitchMaterial android:id="@+id/soundSwitch" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Sound" android:padding="16dp" android:background="#FFFFFF" />
         <com.google.android.material.switchmaterial.SwitchMaterial android:id="@+id/vibrationSwitch" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Vibration" android:padding="16dp" android:background="#FFFFFF" android:layout_marginTop="8dp" />
         <com.google.android.material.switchmaterial.SwitchMaterial android:id="@+id/darkSwitch" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Dark mode" android:padding="16dp" android:background="#FFFFFF" android:layout_marginTop="8dp" />
